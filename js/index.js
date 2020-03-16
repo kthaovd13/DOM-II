@@ -33,14 +33,32 @@ bodyImg[0].addEventListener("mouseover", () => {
     header2[0].style.color="rebeccapurple";
   });
 
+  header2[0].addEventListener('dblclick', (event) => {
+    header2[0].style.color="black";
+  });
+
   header2[1].addEventListener('click', (event) => {
     header2[1].style.color="green";
+  });
+
+  header2[1].addEventListener('dblclick', (event) => {
+    header2[1].style.color="maroon";
   });
 
   header2[2].addEventListener('click', (event) => {
     header2[2].style.color="pink";
   });
 
+  header2[2].addEventListener('dblclick', (event) => {
+    header2[2].style.color="gray";
+  });
+
   header2[3].addEventListener('click', (event) => {
     header2[3].style.color="red";
   });
+
+  header2[3].addEventListener('dblclick', (event) => {
+    header2[3].style.color="blue";
+  });
+
+
