@@ -25,7 +25,7 @@ bodyImg[0].addEventListener("mouseover", () => {
   })
 
   
-  //h2 text color change by click
+  //h2 text color change by click/dblclick
 
   const header2 = document.querySelectorAll("h2")
 
@@ -61,4 +61,7 @@ bodyImg[0].addEventListener("mouseover", () => {
     header2[3].style.color="blue";
   });
 
-
+  const boatImg = document.getElementsByClassName("boat")[0]
+  window.addEventListener("resize", () => {
+      boatImg.src ="img/chris-barbalis-3EydKtD18KA-unsplash.jpg"
+    })
