@@ -27,14 +27,14 @@ bodyImg[0].addEventListener("mouseover", () => {
   
   //h2 text color change by click/dblclick
 
-  const header2 = document.querySelectorAll("h2")
+const header2 = document.querySelectorAll("h2")
 
   header2[0].addEventListener('click', (event) => {
     header2[0].style.color="rebeccapurple";
   });
 
   header2[0].addEventListener('dblclick', (event) => {
-    header2[0].style.color="black";
+    header2[0].style.color="red";
   });
 
   header2[1].addEventListener('click', (event) => {
@@ -61,7 +61,46 @@ bodyImg[0].addEventListener("mouseover", () => {
     header2[3].style.color="blue";
   });
 
-  const boatImg = document.getElementsByClassName("boat")[0]
+const boatImg = document.getElementsByClassName("boat")[0]
   window.addEventListener("resize", () => {
       boatImg.src ="img/chris-barbalis-3EydKtD18KA-unsplash.jpg"
+    })
+
+const logoText = document.querySelector("h1")
+    logoText.addEventListener("mousedown", () => {
+        logoText.textContent ="Bus Fun"
+    })
+
+const logoText1 = document.querySelector("h1")
+    logoText1.addEventListener("mouseup", () => {
+        logoText1.textContent ="Fun Bus"
+    })
+
+const switchImg = document.querySelector(".bus")
+    switchImg.addEventListener("mousedown", () => {
+        switchImg.src ="img/dino-reichmuth-A5rCN8626Ck-unsplash.jpg"
+    })
+
+const switchImg1 = document.querySelector(".bus")
+    switchImg1.addEventListener("mouseup", () => {
+        switchImg1.src ="img/fun-bus.jpg"
+    })
+
+const bordMsg = document.querySelectorAll(".destination h4")
+    
+    bordMsg[0].addEventListener("mouseenter", () => {
+        bordMsg[0].style.border = "1px solid red"
+    })
+
+    bordMsg[1].addEventListener("mouseenter", () => {
+        bordMsg[1].style.border = "1px solid blue"
+    })
+
+    bordMsg[2].addEventListener("mouseenter", () => {
+        bordMsg[2].style.border = "1px solid green"
+    })
+
+const changeText = document.querySelector(".content-destination h2")
+    changeText.addEventListener('wheel', () => {
+        changeText.style.fontSize = "35px"
     })
