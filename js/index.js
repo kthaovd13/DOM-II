@@ -102,5 +102,22 @@ const bordMsg = document.querySelectorAll(".destination h4")
 
 const changeText = document.querySelector(".content-destination h2")
     changeText.addEventListener('wheel', () => {
-        changeText.style.fontSize = "35px"
+        changeText.style.fontSize = "50px"
+    })
+
+const navColor = document.querySelectorAll(".nav a")
+    navColor[0].addEventListener("focus", () => {
+        navColor[0].style.color = "blue"
+    })
+
+    navColor[1].addEventListener("focus", () => {
+        navColor[1].style.color = "red"
+    })
+
+    navColor[2].addEventListener("focus", () => {
+        navColor[2].style.color = "purple"
+    })
+
+    navColor[3].addEventListener("focus", () => {
+        navColor[3].style.color = "green"
     })
