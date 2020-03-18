@@ -121,3 +121,20 @@ const navColor = document.querySelectorAll(".nav a")
     navColor[3].addEventListener("focus", () => {
         navColor[3].style.color = "green"
     })
+
+const navStop = document.querySelectorAll(".nav a")
+    navStop[0].addEventListener('click', (event) => {
+        event.preventDefault()
+    });
+
+    navStop[1].addEventListener('click', (event) => {
+        event.preventDefault()
+    });
+
+    navStop[2].addEventListener('click', (event) => {
+        event.preventDefault()
+    });
+
+    navStop[3].addEventListener('click', (event) => {
+        event.preventDefault()
+    });
